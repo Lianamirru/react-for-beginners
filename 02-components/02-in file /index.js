@@ -1,11 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-
-import React from "react";
-
-function Car() {
-  return <h2>Hi, I am a Car!</h2>;
-}
+import Car from "./Car.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(<Car />);
