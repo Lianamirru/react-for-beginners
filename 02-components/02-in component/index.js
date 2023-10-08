@@ -1,8 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import React from "react";
-
 function Car() {
   return <h2>I am a Car!</h2>;
 }
