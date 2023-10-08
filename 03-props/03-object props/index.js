@@ -1,15 +1,16 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-function Car() {
-  return <h2>I am a Car!</h2>;
+function Car(props) {
+  return <h2>I am a {props.brand.model}!</h2>;
 }
 
 function Garage() {
+  const carInfo = { name: "Ford", model: "Mustang" };
   return (
     <>
-      <h1>Who lives in my Garage?</h1>
-      <Car />
+      <h1>Who lives in my garage?</h1>
+      <Car brand={carInfo} />
     </>
   );
 }
